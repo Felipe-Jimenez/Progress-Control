@@ -5,37 +5,47 @@ from modules.fullClases import *
 def mainWindow():
     #main window
     root = Tk()
+    root.config()
     root.resizable(False,False)
 
-    #main Frame
-    rootFrame = Frame()
-    rootFrame.config(width="900px", height="500px", bg="gray")
-    rootFrame.pack()
+    #left Frame
+    leftFrame = Frame(root)
+    leftFrame.config(width="450px", height="500px", bg="gray")
+    leftFrame.pack(side="left")
+    #right Frame
+    rightFrame = Frame(root)
+    rightFrame.config(width="450px", height="500px", bg="red")
+    rightFrame.pack(side="right")
 
     #title
-    Label(rootFrame,text="Control de Obras", font=(18)).place(x=545,y=10)
+    Label(root,text="Control de Obras", font=(18)).place(x=545,y=10)
+
+
+    #list Work Spaces
+    #pendiente hacer el save de las obras pero que genere el archivo json y guarde la obra
+
 
     root.mainloop()
 
 #form to new Apple 
 def formApple(WSpace):
     #create a window
-    wapple = Tk()
+    wapple = Toplevel()
     wapple.resizable(False,False)
     wapple.title(WSpace.name)
 
     #frame to title
-    titleFrame = Frame()
+    titleFrame = Frame(wapple)
     titleFrame.config(width="300px", height="30px")
     titleFrame.pack()
 
     #frame to form
-    formFrame = Frame()
+    formFrame = Frame(wapple)
     formFrame.config(width="300px", height="500px")
     formFrame.pack()
 
     #frame to button
-    btnFrame = Frame()
+    btnFrame = Frame(wapple)
     btnFrame.config(width="300px", height="30px")
     btnFrame.pack()
 
@@ -43,14 +53,13 @@ def formApple(WSpace):
 
     name = StringVar()
     number = StringVar()
-
     typeH = StringVar()
     typeH.set("Selecciona")
     types = listPrototypes()
-
     start = StringVar()
     final = StringVar()
-
+    print(number.get(), start.get(), final.get(), name.get())
+    
     #name
     Label(formFrame,text="Nombre", font=("Courier", 14)).grid(row=2, column=0 ,sticky = W,padx=10, pady=5)
     Entry(formFrame, textvariable=name).grid(row=2, column=1 ,sticky = N, padx=20,pady=5)
@@ -73,18 +82,22 @@ def formApple(WSpace):
 
     #function add new apple
     def newApple():
-        if(int(number.get()) or typeH != "Selecciona"):
+        if(number.get() != "" and typeH != "Selecciona"):
             WSpace.listApples.append(Apple(name.get(), int(number.get()),typeH.get(), int(start.get()), int(final.get())))
         else:
             WSpace.listApples.append(Apple(name.get(),0,"null",0,0))
         wapple.destroy()
 
     #button
-    btnAcept = Button(btnFrame, text="Agregar", command=newApple).grid(row=0, column=0 ,sticky = N, pady=5)
+    Button(btnFrame, text="Agregar", command=newApple).grid(row=0, column=0 ,sticky = N, pady=5)
 
     wapple.mainloop()
 
-#show concepts of a specific house --FINISHED
+#form WorkSpace
+def formWorkSpace(frame):
+    Label(frame,text="NUEVA OBRA", font=("Courier", 18)).grid(row=0, column=0 ,sticky = N, pady=5)
+
+#show concepts of a specific house --falta boton para editar
 def showHouse(house):
     #create a window
     whouse = Tk()
@@ -127,10 +140,10 @@ def showHouse(house):
     
     whouse.mainloop()
 
-#show list of houses from a specific apple --START
+#show list of houses from a specific apple --
 def showApple(apple):
     #create a window
-    wApple = Tk()
+    wApple = Toplevel()
     wApple.resizable(False,False)
     wApple.title(apple.name)
     
@@ -165,7 +178,7 @@ def showApple(apple):
         for a,b in i.dictionary.items():
             if(t>1):
                 if(b[1]):
-                    avance += b[0]
+                    advance += b[0]
             t+=1
 
 
@@ -175,8 +188,6 @@ def showApple(apple):
         r+=1
 
     wApple.mainloop()
-
-
 
 #show a list of apples from a specific workspace --IN PROGRESS
 def showWorkspace(WSpace):
@@ -191,16 +202,22 @@ def showWorkspace(WSpace):
     Label(titleFrame,text=WSpace.name, font=("Courier", 20)).grid(row=0, column=0 ,sticky = N)
     titleFrame.pack()
 
+    #options frame
+    optionFrame = Frame()
+    optionFrame.config(width="300px", height="100px")
+    Button(optionFrame, text="Agreagar Manzana", command=lambda : formApple(WSpace)).grid(row=1, column=2 ,sticky = N, pady=3)
+    optionFrame.pack()
+
     #table frame
     tableFrame = Frame()
     tableFrame.pack()
 
     #table labels
-    Label(tableFrame,text="MANZANA", font=("Courier", 16)).grid(row=1, column=0 ,sticky = N, padx=10,pady=2)
-    Label(tableFrame,text="N.CASAS", font=("Courier", 16)).grid(row=1, column=1, sticky = N, padx=10, pady=2)
-    Label(tableFrame,text="INI/FIN", font=("Courier", 16)).grid(row=1, column=2, sticky = N, padx=10, pady=2)
+    Label(tableFrame,text="MANZANA", font=("Courier", 16)).grid(row=2, column=0 ,sticky = N, padx=10,pady=2)
+    Label(tableFrame,text="N.CASAS", font=("Courier", 16)).grid(row=2, column=1, sticky = N, padx=10, pady=2)
+    Label(tableFrame,text="INI/FIN", font=("Courier", 16)).grid(row=2, column=2, sticky = N, padx=10, pady=2)
     
-    r = 2
+    r = 3
     for i in WSpace.listApples:
         Label(tableFrame,text=i.name, font=("Courier", 14)).grid(row=r, column=0 ,sticky = W, padx=7,pady=2)
         Label(tableFrame,text=str(i.n_house), font=("Courier", 14)).grid(row=r, column=1, padx=20, pady=2)

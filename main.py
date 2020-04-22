@@ -24,14 +24,10 @@ def importObra(ruta):
 if __name__ == "__main__":
 
     obra1 = WorkSpace("Santa Lucia")
-
-
+    
+    mainWindow()
     #formApple(obra1)
     #showWorkspace(obra1)
 
-    a = Apple("T", 2, "Huizache", 1, 2)
-
-    showApple(a)
-    
     #showHouse(obra1.listApples[0].listHouses[0])
     #showHouse(obra1.listApples[0].listHouses[1])
