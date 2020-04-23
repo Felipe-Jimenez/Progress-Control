@@ -22,9 +22,7 @@ def importObra(ruta):
 
 
 if __name__ == "__main__":
-
-    obra1 = WorkSpace("Santa Lucia")
-    
+    #nota: ya funciona main, pero solo recupera el json de la obra, aun falta que lo cargue en su esctructura
     mainWindow()
     #formApple(obra1)
     #showWorkspace(obra1)

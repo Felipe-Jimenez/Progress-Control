@@ -1,0 +1,290 @@
+[
+    {
+        "name": "MZT1",
+        "n_house": 2,
+        "start": 1,
+        "final": 2,
+        "houses": [
+            {
+                "n": 1,
+                "type": "Huizache",
+                "Mat.Cimentacion": [
+                    200,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 2,
+                "type": "Huizache",
+                "Mat.Cimentacion": [
+                    200,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MZT2",
+        "n_house": 2,
+        "start": 3,
+        "final": 4,
+        "houses": [
+            {
+                "n": 3,
+                "type": "Huizache",
+                "Mat.Cimentacion": [
+                    200,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 4,
+                "type": "Huizache",
+                "Mat.Cimentacion": [
+                    200,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            }
+        ]
+    }
+]

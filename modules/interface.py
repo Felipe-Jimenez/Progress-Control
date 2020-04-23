@@ -6,11 +6,12 @@ def mainWindow():
     #main window
     root = Tk()
     root.config()
+    root.title("CONTROL DE PROCESOS")
     root.resizable(False,False)
 
     #left Frame
     leftFrame = Frame(root)
-    leftFrame.config(width="450px", height="500px", bg="gray")
+    leftFrame.config(width="450px", height="500px")
     leftFrame.pack(side="left")
     #right Frame
     rightFrame = Frame(root)
@@ -18,10 +19,24 @@ def mainWindow():
     rightFrame.pack(side="right")
 
     #title
-    Label(root,text="Control de Obras", font=(18)).place(x=545,y=10)
+    Label(root,text="Control de Obras", font=("Courier", 30)).place(x=545,y=10)
 
+    #title left fram
+    Label(leftFrame,text="OBRAS", font=("Courier", 20)).grid(row=0, column=0, sticky = N)
+
+    #function to charge and show a WS
+    def chargeAndShow(name):
+       tempWS = chargeWorkSpace(name)
+       print(tempWS)
 
     #list Work Spaces
+    wks = listWorkSpaces()
+    r = 2
+    if(len(wks)):#minimal exist one work space
+        for a,b in wks.items():
+            Label(leftFrame,text=a, font=("Courier", 14)).grid(row=r, column=0, sticky = W, padx=20, pady=2)
+            Button(leftFrame,text="Ver", command=lambda n=a: chargeAndShow(n)).grid(row=r, column=1 ,sticky = N, padx=10, pady=5)
+            r+=1
     #pendiente hacer el save de las obras pero que genere el archivo json y guarde la obra
 
 

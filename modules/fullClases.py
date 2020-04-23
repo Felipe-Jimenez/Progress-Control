@@ -19,7 +19,6 @@ class Apple:
         self.start = start
         self.final = final
         self.listHouses = []
-        self.jsonA = {}#apple json(void structure)
         self.__createApple(typeh)
 
     #create a number of houses, but don't fill your own json
@@ -41,6 +40,18 @@ class Apple:
 
         return data[index]['data']
 
+    #create a json structure with own information
+    def chargeJson(self):
+        jsonA = {}
+        jsonA['name'] = self.name
+        jsonA['n_house'] = self.n_house
+        jsonA['start'] = self.start
+        jsonA['final'] = self.final
+        jsonA['houses'] = []
+        for i in self.listHouses:
+            jsonA['houses'].append(i.chargeJson())
+
+        return json.dumps(jsonA)
 #///////////////////////CLASS WORKSPACE///////////////////////////////
 class WorkSpace:
     def __init__(self, name):
