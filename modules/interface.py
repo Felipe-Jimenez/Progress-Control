@@ -1,6 +1,9 @@
 from tkinter import *
 from modules.fullClases import *
 
+#charged Work Space
+WSPACE = 0
+
 #method with the root window
 def mainWindow():
     #main window
@@ -26,8 +29,11 @@ def mainWindow():
 
     #function to charge and show a WS
     def chargeAndShow(name):
-       tempWS = chargeWorkSpace(name)
-       print(tempWS)
+      WSPACE = WorkSpace(name)
+      WSPACE.loadJson(chargeWorkSpace(name))
+      root.destroy()
+      showWorkspace(WSPACE)
+
 
     #list Work Spaces
     wks = listWorkSpaces()
@@ -73,7 +79,6 @@ def formApple(WSpace):
     types = listPrototypes()
     start = StringVar()
     final = StringVar()
-    print(number.get(), start.get(), final.get(), name.get())
     
     #name
     Label(formFrame,text="Nombre", font=("Courier", 14)).grid(row=2, column=0 ,sticky = W,padx=10, pady=5)
@@ -98,9 +103,10 @@ def formApple(WSpace):
     #function add new apple
     def newApple():
         if(number.get() != "" and typeH != "Selecciona"):
-            WSpace.listApples.append(Apple(name.get(), int(number.get()),typeH.get(), int(start.get()), int(final.get())))
+            WSpace.listApples.append(Apple(name.get(), int(number.get()), int(start.get()), int(final.get())))
+            WSpace.listApples[-1].fillApple(typeH.get())
         else:
-            WSpace.listApples.append(Apple(name.get(),0,"null",0,0))
+            WSpace.listApples.append(Apple(name.get(),0,0,0))
         wapple.destroy()
 
     #button
@@ -217,10 +223,17 @@ def showWorkspace(WSpace):
     Label(titleFrame,text=WSpace.name, font=("Courier", 20)).grid(row=0, column=0 ,sticky = N)
     titleFrame.pack()
 
+    #return function
+    def closeButton():
+        WSpace.save()
+        wWspace.destroy()
+        mainWindow()
+
     #options frame
     optionFrame = Frame()
     optionFrame.config(width="300px", height="100px")
-    Button(optionFrame, text="Agreagar Manzana", command=lambda : formApple(WSpace)).grid(row=1, column=2 ,sticky = N, pady=3)
+    Button(optionFrame, text="Agreagar Manzana", command=lambda : formApple(WSpace)).grid(row=1, column=1 ,sticky = N, pady=3)
+    Button(optionFrame, text="Cerrar", command=closeButton).grid(row=1, column=2 ,sticky = N, pady=3)
     optionFrame.pack()
 
     #table frame

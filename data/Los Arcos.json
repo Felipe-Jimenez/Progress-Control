@@ -286,5 +286,12 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "MZT3",
+        "n_house": 0,
+        "start": 0,
+        "final": 0,
+        "houses": []
     }
 ]
