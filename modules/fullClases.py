@@ -28,6 +28,19 @@ class Apple:
                 self.listHouses[-1].dictionary['n'] = x
                 self.listHouses[-1].dictionary['type'] = typeh
 
+    #create a number of houses with a prototype
+    def addHouses(self, typeh, start, final):
+        if(typeh != "null"):
+            for x in range(start,final+1):
+                self.listHouses.append(House(self.__createDictHouse(typeh)))
+                self.listHouses[-1].dictionary['n'] = x
+                self.listHouses[-1].dictionary['type'] = typeh
+            if(self.start == 0): 
+                self.start = start
+
+            self.final = final
+            n_house = len(self.listHouses)
+
     #import a templates of house and return a dictionary with a correct prototype
     def __createDictHouse(self, typeh):
         data = chargeTemplates()
@@ -74,6 +87,9 @@ class WorkSpace:
         data = []
         for i in self.listApples:
             data.append(i.chargeDict())
+
+        if(len(data) == 0):
+            data = ""
 
         archive = "data/"+self.name+".json"
         with open(archive, 'w') as file:

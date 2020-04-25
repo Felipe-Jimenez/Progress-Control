@@ -10,67 +10,71 @@
                 "type": "Huizache",
                 "Mat.Cimentacion": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Cimentacion": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.Muros": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Muros": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.TpLoza": [
                     200,
-                    false
+                    true
                 ],
                 "MO.TpLoza": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.Enchalupado": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Enchalupado": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.Gas": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Gas": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.Cab/Acc": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Cab/Acc": [
                     100,
-                    false
+                    true
                 ],
                 "Col.Muebles": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Col.Muebles": [
                     100,
-                    false
+                    true
                 ],
                 "TomaAgua": [
                     200,
-                    false
+                    true
                 ],
                 "MO.TomaAgua": [
                     100,
-                    false
+                    true
+                ],
+                "Cam.Taza": [
+                    700,
+                    true
                 ]
             },
             {
@@ -78,11 +82,11 @@
                 "type": "Huizache",
                 "Mat.Cimentacion": [
                     200,
-                    false
+                    true
                 ],
                 "MO.Cimentacion": [
                     100,
-                    false
+                    true
                 ],
                 "Mat.Muros": [
                     200,
@@ -289,9 +293,1110 @@
     },
     {
         "name": "MZT3",
+        "n_house": 2,
+        "start": 5,
+        "final": 6,
+        "houses": [
+            {
+                "n": 5,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    true
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    true
+                ],
+                "Mat.Muros": [
+                    200,
+                    true
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ],
+                "Cam.Taza": [
+                    1500,
+                    true
+                ]
+            },
+            {
+                "n": 6,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MTZ4",
         "n_house": 0,
-        "start": 0,
-        "final": 0,
-        "houses": []
+        "start": 7,
+        "final": 20,
+        "houses": [
+            {
+                "n": 7,
+                "type": "Mezquite",
+                "Mat.Cimentacion": [
+                    500,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 8,
+                "type": "Mezquite",
+                "Mat.Cimentacion": [
+                    500,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 9,
+                "type": "Mezquite",
+                "Mat.Cimentacion": [
+                    500,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 10,
+                "type": "Mezquite",
+                "Mat.Cimentacion": [
+                    500,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 11,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 12,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 13,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 14,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 15,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 16,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 17,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 18,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 19,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            },
+            {
+                "n": 20,
+                "type": "Guamuchil",
+                "Mat.Cimentacion": [
+                    400,
+                    false
+                ],
+                "MO.Cimentacion": [
+                    100,
+                    false
+                ],
+                "Mat.Muros": [
+                    200,
+                    false
+                ],
+                "MO.Muros": [
+                    100,
+                    false
+                ],
+                "Mat.TpLoza": [
+                    200,
+                    false
+                ],
+                "MO.TpLoza": [
+                    100,
+                    false
+                ],
+                "Mat.Enchalupado": [
+                    200,
+                    false
+                ],
+                "MO.Enchalupado": [
+                    100,
+                    false
+                ],
+                "Mat.Gas": [
+                    200,
+                    false
+                ],
+                "MO.Gas": [
+                    100,
+                    false
+                ],
+                "Mat.Cab/Acc": [
+                    200,
+                    false
+                ],
+                "MO.Cab/Acc": [
+                    100,
+                    false
+                ],
+                "Col.Muebles": [
+                    200,
+                    false
+                ],
+                "MO.Col.Muebles": [
+                    100,
+                    false
+                ],
+                "TomaAgua": [
+                    200,
+                    false
+                ],
+                "MO.TomaAgua": [
+                    100,
+                    false
+                ]
+            }
+        ]
     }
 ]
