@@ -39,7 +39,7 @@ class Apple:
                 self.start = start
 
             self.final = final
-            n_house = len(self.listHouses)
+            self.n_house = len(self.listHouses)
 
     #import a templates of house and return a dictionary with a correct prototype
     def __createDictHouse(self, typeh):

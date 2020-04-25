@@ -4,6 +4,46 @@ from modules.fullClases import *
 #charged Work Space
 WSPACE = 0
 
+#show a documentation text
+def viewDocumentation():
+    pass
+    file =  open("data/documentation.txt")
+    data = file.readlines()
+    file.close()
+
+    #create a window
+    wDoc = Toplevel()
+    wDoc.resizable(False,False)
+    wDoc.title("DOCUMENTACIÓN")
+
+    #frame to title
+    titleFrame = Frame(wDoc)
+    titleFrame.config(width="300px", height="30px")
+    titleFrame.pack()
+    Label(titleFrame,text="DOCUMENTACIÓN", font=("Courier", 20)).grid(row=0, column=0 ,sticky = N, pady=5)
+
+    #frame to data
+    dataFrame = Frame(wDoc)
+    dataFrame.config(width="300px", height="500px")
+    dataFrame.pack()
+
+    #frame to button
+    btnFrame = Frame(wDoc)
+    btnFrame.config(width="300px", height="30px")
+    btnFrame.pack()
+
+    #name fo concept
+    txt = Text(dataFrame, font=("Courier", 14))
+    txt.grid(row = 0, column = 0, sticky = N, padx=5, pady=5)
+    for i in data:
+        txt.insert(INSERT, i)
+
+    #button
+    Button(btnFrame, text="Cerrar", command=lambda : wDoc.destroy()).grid(row=0, column=1 ,sticky = N, pady=5)
+
+    wDoc.mainloop()
+
+
 #method with the root window
 def mainWindow():
     #main window
@@ -16,32 +56,32 @@ def mainWindow():
     leftFrame = Frame(root)
     leftFrame.config(width="450px", height="500px")
     leftFrame.pack(side="left")
-    Label(leftFrame, text="CONTROL DE OBRAS", font=("Courier", 25)).grid(row=0, column=0, sticky=N, padx=10, pady=10)
+    Label(leftFrame, text="CONTROL DE OBRAS", font=("Courier", 25)).grid(row=0, column=1, sticky=N, padx=10, pady=10)
 
     #title left fram
     Label(leftFrame,text="OBRAS", font=("Courier", 20)).grid(row=1, column=0, sticky = N)
     Button(leftFrame,text="Agregar", command=formWorkSpace).grid(row=1, column=1 ,sticky = N, padx=10, pady=5)
+    Button(leftFrame,text="Cerrar", command=lambda : root.destroy()).grid(row=1, column=2 ,sticky = N, padx=10, pady=5)
 
     #function to charge and show a WS
     def chargeAndShow(name):
-      WSPACE = WorkSpace(name)
-      if(chargeWorkSpace(name) != 0):
-        WSPACE.loadJson(chargeWorkSpace(name))
-      root.destroy()
-      showWorkspace(WSPACE)
-
+        WSPACE = WorkSpace(name)
+        if(chargeWorkSpace(name) != 0):
+            WSPACE.loadJson(chargeWorkSpace(name))
+        root.destroy()
+        showWorkspace(WSPACE)
+      
 
     #list Work Spaces
     wks = listWorkSpaces()
-    r = 2
-    if(len(wks)):#minimal exist one work space
+    r = 3
+    if(wks != 0):#minimal exist one work space
         for a,b in wks.items():
             Label(leftFrame,text=a, font=("Courier", 14)).grid(row=r, column=0, sticky = W, padx=20, pady=2)
             Button(leftFrame,text="Ver", command=lambda n=a: chargeAndShow(n)).grid(row=r, column=1 ,sticky = N, padx=10, pady=5)
             r+=1
-    #pendiente hacer el save de las obras pero que genere el archivo json y guarde la obra
 
-
+    Button(leftFrame,text="DOCUMENTACIÓN", command=viewDocumentation).grid(row=r+1, column=0 ,sticky = N, padx=10, pady=5)
     root.mainloop()
 
 #form to add house or houses to self apple
@@ -263,7 +303,7 @@ def formWorkSpace():
 
     #button
     Button(btnFrame, text="Agregar", command=add).grid(row=0, column=0 ,sticky = N, pady=5)
-    Button(btnFrame, text="Cancelar", command=lambda : wExtra.destroy()).grid(row=0, column=1 ,sticky = N, pady=5)
+    Button(btnFrame, text="Cancelar", command=lambda : wWs.destroy()).grid(row=0, column=1 ,sticky = N, pady=5)
 
     wWs.mainloop()
 
@@ -304,7 +344,7 @@ def showHouse(house):
         if(z>1):
             if(y[1]):
                 state = "green"
-            Label(tableFrame,text=x, font=("Courier", 14)).grid(row=r, column=0 ,sticky = W, padx=7,pady=2)
+            Label(tableFrame,text=x, font=("Courier", 14), fg=state).grid(row=r, column=0 ,sticky = W, padx=7,pady=2)
             Label(tableFrame,text="$ "+str(y[0]), font=("Courier", 14), fg=state).grid(row=r, column=1, padx=20, pady=2)
             Label(tableFrame,text=str(y[1]), font=("Courier", 14), fg=state).grid(row=r, column=2, padx=20, pady=2)
             if(y[1] == 0):
@@ -334,7 +374,7 @@ def showApple(apple):
     tAFrame = Frame(wApple)
     tAFrame.config(width="300px", height="50px")
     tAFrame.pack()
-    Label(tAFrame,text=apple.name, font=("Courier", 20)).grid(row=0, column=0 ,sticky = N)
+    Label(tAFrame,text=apple.name, font=("Courier", 20)).grid(row=0, column=1 ,sticky = N)
 
     #options frame
     optionFrame = Frame(wApple)

@@ -22,54 +22,5 @@
                 "TomaAgua":[200,false],
                 "MO.TomaAgua":[100,false]
             }
-    },
-    {
-        "proto":"Guamuchil",
-        "data":
-            {
-                "n":0,
-                "type":null,
-                "Mat.Cimentacion":[400,false],
-                "MO.Cimentacion":[100,false],
-                "Mat.Muros":[200,false],
-                "MO.Muros":[100,false],
-                "Mat.TpLoza":[200,false],
-                "MO.TpLoza":[100,false],
-                "Mat.Enchalupado":[200,false],
-                "MO.Enchalupado":[100,false],
-                "Mat.Gas":[200,false],
-                "MO.Gas":[100,false],
-                "Mat.Cab/Acc":[200,false],
-                "MO.Cab/Acc":[100,false],
-                "Col.Muebles":[200,false],
-                "MO.Col.Muebles":[100,false],
-                "TomaAgua":[200,false],
-                "MO.TomaAgua":[100,false]
-            }
-    },
-    {
-        "proto":"Mezquite",
-        "data":
-            {
-                "n":0,
-                "type":null,
-                "Mat.Cimentacion":[500,false],
-                "MO.Cimentacion":[100,false],
-                "Mat.Muros":[200,false],
-                "MO.Muros":[100,false],
-                "Mat.TpLoza":[200,false],
-                "MO.TpLoza":[100,false],
-                "Mat.Enchalupado":[200,false],
-                "MO.Enchalupado":[100,false],
-                "Mat.Gas":[200,false],
-                "MO.Gas":[100,false],
-                "Mat.Cab/Acc":[200,false],
-                "MO.Cab/Acc":[100,false],
-                "Col.Muebles":[200,false],
-                "MO.Col.Muebles":[100,false],
-                "TomaAgua":[200,false],
-                "MO.TomaAgua":[100,false]
-            }
     }
-
 ]

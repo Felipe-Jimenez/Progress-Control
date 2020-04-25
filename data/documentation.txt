@@ -1,0 +1,49 @@
+DOCUMENTACIÓN ProgressControl v 0.1
+
+Este software esta creado con el motivo de ayudar a manejar el proceso que conlleva administrar una obra, a medio monetario y progresivo.
+
+<---- USO DEL SOFTWARE---->
+
+------------------------------------------
+IMPORTANTE: este programa no soporta actualizaciones a tiempo real, así que algunos cambios no se realizaran hasta cerrar por completo el programa.
+------------------------------------------
+IMPORTANTE: para cerrar el programa correctamente debe, siempre, precionar los *Botones* de "Cerrar", esto es de vital importancia debido a que estos ejecutan las acciones de "guardad", en caso contrario no se aplicarán algunos cambios correctamente.
+------------------------------------------
+
+<---INICIO
+1. Iniciando el software se mostrara una pantalla en la cual se pueden ver las obras registradas (si las hay), para agregar una nueva Obra, presione "Agregar", de ya tener una registrada solo precione "Ver".
+
+    1.1 Agregar OBRA: precione el boton agregar, llene el campo "Nombre" y precione "Agregar". (los cambios para esta pantalla aparecerán hasta cerrar y abrir de nuevo el programa)
+
+<---OBRA
+2. La pantalla con titulo "OBRA" representa una obra entera, pero solo se podrán observar las manzanas que pertenecen a dicha OBRA.
+
+    2.1 Agregar MANZANA: para agregar una nueva manzana presione el boton "Agregar Manzana", se desplegara un formulario con multiples campos: "Nombre": nombre de la Manzana, "N.Casas": número de casas que contendra la manzana, "Tipo": tipo de casas que agregara, "Inicio/Final": inicio y final de los números de las casas. Para finalizar la operación presione Agregar, de no preferirlo presione "Cancelar". EJEMPLO: {Nombre: Manzana1, N.Casas: 5, Tipo: Huizache, Inicio: 1, Final: 5} (Es importante que el atributo "N.Casas" e "Inicio/Final" tengan  una perfecta correalción, de no ser así es probable que se muestren errores en la Manzana)
+    
+    2.2 Agregar MANZANA sin CASAS: para este caso solo debe llenar el campo "Nombre" y precionar "Agregar".
+
+    2.3 Ver cambios: para observar los cambios realizados debe cerrar esta pantalla (Boton "Cerrar") y abrirla de nuevo.
+
+<---MANZANA
+3. La pantalla con titulo "MANZANA" representa una manzana entera, pero solo se podrán observar las casas pertenecientes a dicha MANZANA, además un adelanto de su avance.
+
+    3.1 Ver: Para ver los datos de una casa basta con presionar el Boton "Ver", esto desplegara la una pantalla con los datos de la casa.
+
+    3.2 Agregar CASAS: para agregar casas presione "Agregar Casas", esto desplegara un formulario con los campos necesarios: "Cantidad": cantidad de casas a agregar, "Tipo" tipo de casa, "Inicio/Final": inicio y final de la numeración de las casas; Para finalizar la operación presione Agregar, de no preferirlo presione "Cancelar". (Es vital que el Inicio y final de las casas sean correalacionales con las casas que ya contiene la MANZANA y la OBRA, un mal uso de esto causaría tener multiples manzanas y que tuviesen números de casas duplicados)
+
+    3.3 Ver cambios: para observar los cambios realizados debe cerrar esta pantalla (Boton "Cerrar") y abrirla de nuevo.
+
+<---CASA
+4. La pantalla CASA mostrara el listado de conceptos que contiene esa casa, se mostrara con el formato: CONCEPTO-MONTO-AVANCE, ademas de un boton "Realizado", este boton cambia el estado del concepto, de False a True (No realizado/Realizado).
+
+    4.1 Extra: para agregar algun extra a la casa, basta con precionar el boton "Extra", de desplegara un formulario con los siguientes campos: "Concepto": concepto del extra, procure que sea corto el nombre que pondra, "Monto": cantidad monetaria del concepto, "Estado": estado del concepto (No realizado/Realizado)(0/1). Para efectuar los cambios presione "Agregar", de no ser así presione "Cancelar".
+
+    4.2 Estado de la CASA: el estado de la casa esta representado por 2 partes: "TOTAL": en esta fila notamos el total monetario de todos los conceptos(COLOR ROJO),  y el avance total de la casa(COLOR VERDE), "CONCEPTOS": los conceptos realizados se muestran en color verde.
+
+    4.3 Ver cambios: para observar los cambios realizados debe cerrar esta pantalla (Boton "Cerrar") y abrirla de nuevo.
+
+
+
+<----- CÓDIGO ----->
+el código de este proyecto es totalmente Open Source, puede encontrar el repositorio en GitHub
+con el siguiente link: https://github.com/Felipe-Jimenez/Progress-Control.git

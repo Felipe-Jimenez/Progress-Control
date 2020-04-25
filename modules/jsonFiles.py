@@ -1,5 +1,6 @@
 import json
 import os
+
 #read and return a list with the templates house dictionary
 def chargeTemplates():
     with open("json/templates.json") as file:
@@ -36,6 +37,10 @@ def listPrototypes():
 #read an return a dictionary with the names and file names of all the Work spaces
 def listWorkSpaces():
     WSpaces = {}
+
+    if(os.stat("data/data.json").st_size == 0):
+        return 0
+
     with open("data/data.json") as file:
         data = json.load(file)
     data = json.loads(json.dumps(data))
@@ -51,10 +56,14 @@ def writeWS(name):
         'name':name,
         'file':name+".json"
     }
-    with open("data/data.json") as file:
-        dictionary = json.load(file)
 
-    dictionary = json.loads(json.dumps(dictionary))
+    dictionary = []
+
+    if(os.stat("data/data.json").st_size != 0):
+        with open("data/data.json") as file:
+            dictionary = json.load(file)
+        dictionary = json.loads(json.dumps(dictionary))
+    
     dictionary.append(data)
     
     with open("data/data.json", 'w') as file:
